@@ -22,13 +22,16 @@ namespace BalanceReconciliation.Service.Reconcile
             {
                 var _txn = JsonConvert.DeserializeObject<ReconcileRequestDto>(txn);
                 var balance = _txn.accounts[0].balances.current.amount;
+                var initBalance = 0;
                 var txns = _txn.accounts[0].transactions;
                 var res = txns
                     .GroupBy(x => x.bookingDate)
+                    .OrderBy(o => o.Key)
                     .Select(y => new {
                         Date = y.Key.ToString("yyyy-MM-dd"),
-                        Total = balance + y.Sum(y => y._amount)
-                    }).ToList();
+                        Total = initBalance += y.Sum(y => y._amount)
+                    })
+                    .ToList();
                 
                 reconcileResponse.TotalCredits = txns.Where(i => i.creditDebitIndicator.Equals("Credit")).Count();
                 reconcileResponse.TotalDebits = txns.Where(i => i.creditDebitIndicator.Equals("Debit")).Count();

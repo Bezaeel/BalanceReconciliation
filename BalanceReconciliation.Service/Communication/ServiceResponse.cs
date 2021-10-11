@@ -24,7 +24,6 @@ namespace BalanceReconciliation.Service.Communication
         }
         public ServiceResponse(bool success, string message, object data)
         {
-            IsSuccess = success;
             Message = message;
             Data = data;
         }
