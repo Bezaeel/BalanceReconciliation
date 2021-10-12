@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalanceReconciliation.Servi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalanceReconciliation.Test", "BalanceReconciliation.Test\BalanceReconciliation.Test.csproj", "{7E1744B2-F5F5-48F9-91FA-6473B6CA9ECD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BalanceReconciliation.API", "BalanceReconciliation.API\BalanceReconciliation.API.csproj", "{70014C19-A03A-4876-989C-03B61990B5C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{7E1744B2-F5F5-48F9-91FA-6473B6CA9ECD}.Release|x64.Build.0 = Release|Any CPU
 		{7E1744B2-F5F5-48F9-91FA-6473B6CA9ECD}.Release|x86.ActiveCfg = Release|Any CPU
 		{7E1744B2-F5F5-48F9-91FA-6473B6CA9ECD}.Release|x86.Build.0 = Release|Any CPU
+		{70014C19-A03A-4876-989C-03B61990B5C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70014C19-A03A-4876-989C-03B61990B5C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70014C19-A03A-4876-989C-03B61990B5C7}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{70014C19-A03A-4876-989C-03B61990B5C7}.Debug|x64.Build.0 = Debug|Any CPU
+		{70014C19-A03A-4876-989C-03B61990B5C7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{70014C19-A03A-4876-989C-03B61990B5C7}.Debug|x86.Build.0 = Debug|Any CPU
+		{70014C19-A03A-4876-989C-03B61990B5C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70014C19-A03A-4876-989C-03B61990B5C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70014C19-A03A-4876-989C-03B61990B5C7}.Release|x64.ActiveCfg = Release|Any CPU
+		{70014C19-A03A-4876-989C-03B61990B5C7}.Release|x64.Build.0 = Release|Any CPU
+		{70014C19-A03A-4876-989C-03B61990B5C7}.Release|x86.ActiveCfg = Release|Any CPU
+		{70014C19-A03A-4876-989C-03B61990B5C7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

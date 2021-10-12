@@ -28,6 +28,7 @@ namespace BalanceReconciliation.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHealthChecks();
+            services.AddLogging();
             services.AddScoped<IReconcile, Reconcile>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
