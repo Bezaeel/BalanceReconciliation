@@ -22,10 +22,10 @@ namespace BalanceReconciliation.Service.Communication
         {
 
         }
-        public ServiceResponse(bool success, string message, object data)
+        public ServiceResponse(string message, ErrorCodes code)
         {
             Message = message;
-            Data = data;
+            Code = code;
         }
     }
 }

@@ -46,7 +46,7 @@ namespace BalanceReconciliation.Service.Reconcile.Dtos
 
     public class DayBalance
     {
-        public DateTime Date { get; set; }
+        public string Date { get; set; }
         public int Balance { get; set; }
     }
 }
