@@ -10,14 +10,16 @@ EOD is very important in accounting as it helps financial organizations check fo
 The Reconciliation POST endpoint accepts a json file upload in a agreed template <br/> 
 deserializes it then calculates the EOD of the transactions in the file.
 
-# Testing the application
-
-```
-    cd BalanceReconciliation.Test
-    dotnet test
-```
-
 # Running the application
 
 `docker-compose up`
 
+# Testing
+After running the application <br/>
+
+- Open browser <br/>
+- Navigate to [http://localhost:5000/swagger](http://localhost:5000/swagger)
+
+# Sample
+![1](Screenshot1.png)
+![2](Screenshot2.png)
