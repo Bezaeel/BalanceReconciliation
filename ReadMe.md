@@ -30,7 +30,7 @@ Considering this task to be CPU intensive, we can move the service project from 
 Employing a queue to make the EOD calculation process asynchronous. <br/>
 
 Therefore, new architecture will be like 
-![EOD](EOD.drawio.svg)
+![EOD](EOD.png)
 
 In the architecture above, we scale out the worker service based on request queueing.
 
