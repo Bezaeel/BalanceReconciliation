@@ -23,3 +23,20 @@ After running the application <br/>
 # Sample
 ![1](Screenshot1.png)
 ![2](Screenshot2.png)
+
+
+# Improvement
+Considering this task to be CPU intensive, we can move the service project from a class library to a worker service <br/>
+Employing a queue to make the EOD calculation process asynchronous. <br/>
+
+Therefore, new architecture will be like 
+![EOD](EOD.drawio.svg)
+
+In the architecture above, we scale out the worker service based on request queueing.
+
+Additional mechanisms will be added seeing this feature is async now.
+
+- Endpoints to get EOD balances/pending status
+- Webhook for EOD balances
+
+These above mechanisms will retrieve the EOD from cache by a specified correlationID which was sent as acknowledgement from the queue.
